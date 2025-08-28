@@ -1,0 +1,14 @@
+
+{
+  "name": "DS_SQL_Clientes",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "LS_SQL_OnPrem",
+      "type": "LinkedServiceReference"
+    },
+    "type": "SqlServerTable",
+    "typeProperties": {
+      "tableName": "dbo.Clientes"
+    }
+  }
+}
