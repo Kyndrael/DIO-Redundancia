@@ -1,1 +1,11 @@
+# Node / Python / VS Code
+node_modules/
+__pycache__/
+*.pyc
+.env
+.vscode/
+
+# Azure configs
+*.publishsettings
+*.azureconfig
 
