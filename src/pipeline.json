@@ -1,1 +1,38 @@
+{
+  "name": "PL_Clientes_OnPrem_to_Blob",
+  "properties": {
+    "activities": [
+      {
+        "name": "Copy_Clientes",
+        "type": "Copy",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "7.00:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30
+        },
+        "typeProperties": {
+          "source": {
+            "type": "SqlSource"
+          },
+          "sink": {
+            "type": "DelimitedTextSink"
+          }
+        },
+        "inputs": [
+          {
+            "referenceName": "DS_SQL_Clientes",
+            "type": "DatasetReference"
+          }
+        ],
+        "outputs": [
+          {
+            "referenceName": "DS_Blob_Clientes",
+            "type": "DatasetReference"
+          }
+        ]
+      }
+    ]
+  }
+}
 
